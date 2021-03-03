@@ -21,7 +21,7 @@ ADD logging.properties ${CATALINA_HOME}/conf/
 # Remove unneeded apps
 RUN rm -rf ${CATALINA_HOME}/webapps/examples ${CATALINA_HOME}/webapps/docs 
 
-WORKDIR /opt/tomcat
+#WORKDIR /opt/tomcat
 
 ADD entrypoint.sh /entrypoint.sh
 
