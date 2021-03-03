@@ -19,10 +19,10 @@ RUN \
 ADD logging.properties ${CATALINA_HOME}/conf/
 
 # Remove unneeded apps
-RUN rm -rf ${CATALINA_HOME}/webapps/examples ${CATALINA_HOME}/webapps/docs 
+RUN rm -rf ${CATALINA_HOME}/webapps/*
 
 #WORKDIR /opt/tomcat
 
-ADD entrypoint.sh /entrypoint.sh
+ADD entrypoint.sh /entrypoint.sh && chmod +x entrypoint.sh
 
 CMD ["/bin/bash","/entrypoint.sh"]
