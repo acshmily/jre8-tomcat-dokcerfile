@@ -23,7 +23,6 @@ RUN rm -rf ${CATALINA_HOME}/webapps/examples ${CATALINA_HOME}/webapps/docs
 
 WORKDIR /opt/tomcat
 
-ADD entrypoint.sh /entrypoint.sh && \
-RUN chmod +x /entrypoint.sh
+ADD entrypoint.sh /entrypoint.sh
 
 CMD ["/bin/bash","/entrypoint.sh"]
