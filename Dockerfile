@@ -1,5 +1,4 @@
 FROM acshmily/jre:8u281_20210207
-
 MAINTAINER acshmily <github.com/acshmily>
 
 ENV TOMCAT_MAJOR_VERSION 10
